@@ -13,7 +13,7 @@
 
  <?php
 //Sintaxe com colchetes
-$bandas = ["QUEEN", "NIRVANA","THE DOORS"];
+$bandas = ["QUEEN", "NIRVANA","THE DOORS", "Pink Floyd"];
 
 //Sintaxe com a função array()
 $cursos = ["Excel", "Power BI", "UX Designer", "PHP"];
