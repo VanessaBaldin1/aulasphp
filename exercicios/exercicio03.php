@@ -34,7 +34,5 @@ $valorCompraFinal = number_format($valorCompra,2,",",".");
 
 <p>O Valor da compra feita é <?=$valorCompraFinal?>  e o desconto obtido foi R$ <?=$valorfinal?>.</p>
 
-
-
 </body>
 </html>
