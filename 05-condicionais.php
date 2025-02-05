@@ -43,10 +43,10 @@ if($numero > 1) echo "<p>$numero é maior que 1</p>";
 ?>
 
 <hr>
-   <h2>Composta</h2>
+   <h2>Composta usando <code>if/else</code></h2>
 <?php
 $produto = "Ultrabook Asus";
-$qtdEmeEstoque = 0; //O que temos
+$qtdEmeEstoque = 10; //O que temos
 $qtdCritica = 5; //mínimo necessário
 
 echo "<h3>$produto</h3>";
@@ -56,7 +56,7 @@ if ($qtdEmeEstoque < $qtdCritica) {
    echo "<p class=\"compras\">É necessário comprar!</p>";
 
          //Condicional Aninhada
-         if($qtdEmeEstoque < $qtdCritica){
+         if($qtdEmeEstoque === 0){
            echo "<p class=\"urgente\"><strong>🫷Urgente🫸</strong></p>";
          }
 
@@ -69,8 +69,23 @@ if ($qtdEmeEstoque < $qtdCritica) {
 ?>
 
 <hr>
-   <h2>Encadeada</h2>
+   <h2>Encadeada usando <code>if/elseif/else</code></h2>
 
+<!--Verficar a idade de uma pessoa e determinar se ela é criança, adolescente, adulta ou idosa. -->
+
+<?php
+$idade = 17;
+if ($idade <= 12){
+   echo "<p>Criança 👼</p>";
+} elseif($idade <= 17){
+   echo "<p>Adolescente 😒</p>";
+}elseif($idade <= 59){
+   echo "<p>Adulto 💼</p>";
+} else{
+   echo "<p>idoso 🧓</p>";
+}
+
+?>
 
 
 </body>
