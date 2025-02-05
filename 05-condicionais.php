@@ -21,11 +21,28 @@ if($numero > 1) {
 
 //Sintaxe omitindo as chaves - aparece sem 
 if($numero > 1) echo "<p>$numero é maior que 1</p>";
+?>
+
+<hr>
+   <h2>Composta</h2>
+<?php
+$produto = "Ultrabook Asus";
+$qtdEmeEstoque = 10; //O que temos
+$qtdCritica = 5; //mínimo necessário
+
+echo "<h3>$produto</h3>";
+echo "<h4>Quantidade em estoque: $qtdEmeEstoque</h4>";
+
+if ($qtdEmeEstoque < $qtdCritica) {
+   echo "<p>É necessário comprar!</p>";
+} else {
+   echo "<p>Estoque normal</p>";
+}
+
 
 ?>
 
-   <h2>Composta</h2>
-
+<hr>
    <h2>Encadeada</h2>
 
 
