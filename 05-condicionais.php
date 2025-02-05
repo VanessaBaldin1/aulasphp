@@ -4,6 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PHP - Condicionais</title>
+   <style>
+     .compras{
+      color: red;
+     }
+
+     .urgente{
+      color: red;
+      background-color: yellow;
+     }
+
+
+     .normal{
+      color: darkgreen;
+     }
+
+   </style>
+
+
+
 </head>
 <body>
    <h1>Estruturas condicionais</h1>  
@@ -27,16 +46,23 @@ if($numero > 1) echo "<p>$numero é maior que 1</p>";
    <h2>Composta</h2>
 <?php
 $produto = "Ultrabook Asus";
-$qtdEmeEstoque = 10; //O que temos
+$qtdEmeEstoque = 0; //O que temos
 $qtdCritica = 5; //mínimo necessário
 
 echo "<h3>$produto</h3>";
 echo "<h4>Quantidade em estoque: $qtdEmeEstoque</h4>";
 
 if ($qtdEmeEstoque < $qtdCritica) {
-   echo "<p>É necessário comprar!</p>";
+   echo "<p class=\"compras\">É necessário comprar!</p>";
+
+         //Condicional Aninhada
+         if($qtdEmeEstoque < $qtdCritica){
+           echo "<p class=\"urgente\"><strong>🫷Urgente🫸</strong></p>";
+         }
+
+
 } else {
-   echo "<p>Estoque normal</p>";
+   echo "<p class=\"normal\">Estoque normal</p>";
 }
 
 
