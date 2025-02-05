@@ -46,24 +46,29 @@ if($numero > 1) {
 $produto = "Ultrabook Asus";
 $qtdEmeEstoque = 10; //O que temos
 $qtdCritica = 5; //mínimo necessário
+?>
+<h3><?=$produto?></h3>
+<h4>Quantidade em estoque: <?=$qtdEmeEstoque?></h4>
 
-echo "<h3>$produto</h3>";
-echo "<h4>Quantidade em estoque: $qtdEmeEstoque</h4>";
-
+<?php
 if ($qtdEmeEstoque < $qtdCritica) {
-   echo "<p class=\"compras\">É necessário comprar!</p>";
 
+?>
+   <p class="compras">É necessário comprar!</p>
+<?php
          //Condicional Aninhada
-         if($qtdEmeEstoque === 0){
-           echo "<p class=\"urgente\"><strong>🫷Urgente🫸</strong></p>";
+         if($qtdEmeEstoque === 0) {
+?>
+          <p class="urgente"><strong>🫷Urgente🫸</strong></p>
+<?php
          }
 
+} else { 
+?>
 
-} else {
-   echo "<p class=\"normal\">Estoque normal</p>";
+   <p class="normal">Estoque normal</p>
+<?php   
 }
-
-
 ?>
 
 <hr>
