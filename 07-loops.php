@@ -136,6 +136,7 @@ foreach($clubes as $clube => $apelido){
   }
 ?>
 
+<hr>
     <h3>Acessando objeto</h3>
 
 <?php
