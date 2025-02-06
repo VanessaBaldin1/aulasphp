@@ -11,6 +11,7 @@
   
   <h2>&& (E/AND)</h2>
   <p>Todas as condições precisam ser <b>VERDADEIRAS/TRUE</b></p>
+
 <?php
 /*Avaliar um aluno mediante média e faltas*/ 
 $media = 9.5;
@@ -23,9 +24,27 @@ if ($media >= 7 && $faltas <= 10) {
 }
 ?>
 
+<hr>
 
   <!-- o símbolo | é chamado de pipe -->
   <h2>|| (OU/OR)</h2>
+  <p><i>Basta que apenas uma condição seja <b>VERDADEIRA/TRUE</b> </i></p>
+<?php
+/*Dar um desconto a um cliente que seja VIP ou que tenha cupom */
+$clienteVIP = true; //valor/tipo lógico/boolean
+$temCupom = false;
+
+if ($clienteVIP || $temCupom) {
+  echo "<p>Desconto aplicado!</p>";
+} else {
+ echo "<p>Sem desconto!</p>";
+}
+
+
+?>
+
+
+
 
   <h2>! (NÃO)</h2>
 
