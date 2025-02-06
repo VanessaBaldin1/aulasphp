@@ -20,6 +20,7 @@ $tecnologias = array(
 foreach($tecnologias as $tecnologia => $descricao){
 ?>
   
+  <caption></caption>
   <table>
       <tr>
         <td><?=$tecnologia?></td>
