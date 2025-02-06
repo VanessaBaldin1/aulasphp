@@ -11,6 +11,18 @@
 
   <h2>While (ENQUANTO)</h2>
   <p>Executa ações <b>enquanto a condição for verdadeira</b>. Se a condição inicialmente não é verdadeira, o loop não funciona nenhuma vez.</p>
+<?php
+$i = 1;
+while ($i <=3 ){
+?>
+    <p><?=$i?></p>
+
+<?php  
+  $i++;
+
+}
+
+?>
 
 
   <H2>DO/WHILE (parecido com REPITA)</H2>
