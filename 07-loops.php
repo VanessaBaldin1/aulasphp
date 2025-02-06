@@ -115,7 +115,25 @@ foreach ($alunos as $aluno){
 
 <?php
 }
+?>
 
+    <h3>Acessando array associativo</h3>
+
+<?php
+$clubes = [
+  "Corinthians" => "Timão",
+  "Palmeiras"  => "Porco",
+  "São Paulo" => "Tricolor",
+  "Santos"  => "Peixe"
+];
+
+foreach($clubes as $clube => $apelido){
+
+?>
+    <p>O clube <?=$clube?> é conhecido como <?=$apelido?></p>
+    
+<?php
+  }
 ?>
 
 
