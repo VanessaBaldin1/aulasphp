@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício PHP com HTML</title>
     <style>
-        /* Estilo da tabela */
         table {
             width: 60%;
             border-collapse: collapse;
             margin: 20px auto;
-            font-family: Arial, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         table, th, td {
@@ -23,7 +22,7 @@
         }
 
         th {
-            background-color: #4CAF50;
+            background-color: violet;
             color: white;
         }
 
