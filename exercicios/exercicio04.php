@@ -28,7 +28,7 @@
             color: white;
         }
 
-        /* Linhas de cores alternadas */
+       
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
@@ -37,12 +37,10 @@
             background-color: #ffffff;
         }
 
-        /* Realce de cor ao passar o mouse */
         tr:hover {
             background-color: #ddd;
         }
 
-        /* Estilo do cabeçalho */
         h1 {
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
