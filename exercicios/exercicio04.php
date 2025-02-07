@@ -71,17 +71,15 @@
                 "Java" => "Softwares"
             ];
 
-            // ID fictício para cada linha
             $id = 1001;
 
-            // Loop para exibir os dados na tabela
             foreach ($linguagens as $linguagem => $descricao) {
                 echo "<tr>
                         <td>$id</td>
                         <td>$linguagem</td>
                         <td>$descricao</td>
                       </tr>";
-                $id++; // Incrementa o ID fictício para o próximo
+                $id++; 
             }
             ?>
         </tbody>
