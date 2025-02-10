@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>(VERSÃO 2) PHP - Condicionais</title>
-   <style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+   <!-- <style>
      .compras{
       color: red;
      }
@@ -19,16 +22,17 @@
       color: darkgreen;
      }
 
-   </style>
+   </style> -->
 
 
 
 </head>
 <body>
-   <h1>(VERSÃO 2)Estruturas condicionais</h1>  
+<div class="container">
+   <h1 class="alert alert-primary">(VERSÃO 2)Estruturas condicionais</h1>  
    <hr>
 
-   <h2>Simples <code>if</code></h2>
+   <h2 class="alert alert-primary">Simples <code>if</code></h2>
 
 
 <?php
@@ -41,14 +45,14 @@ if($numero > 1) {
 ?>
 
 <hr>
-   <h2>Composta usando <code>if/else</code></h2>
+   <h2 class="alert alert-heading">Composta usando <code>if/else</code></h2>
 <?php
 $produto = "Ultrabook Asus";
 $qtdEmeEstoque = 10; //O que temos
 $qtdCritica = 5; //mínimo necessário
 ?>
-<h3><?=$produto?></h3>
-<h4>Quantidade em estoque: <?=$qtdEmeEstoque?></h4>
+<h3 class="alert alert-light"><?=$produto?></h3>
+<h4 class="alert alert-light">Quantidade em estoque: <?=$qtdEmeEstoque?></h4>
 
 <?php
 if ($qtdEmeEstoque < $qtdCritica) {
@@ -72,7 +76,7 @@ if ($qtdEmeEstoque < $qtdCritica) {
 ?>
 
 <hr>
-   <h2>Encadeada usando <code>if/elseif/else</code></h2>
+   <h2 class="alert alert-success">Encadeada usando <code>if/elseif/else</code></h2>
 
 <!--Verficar a idade de uma pessoa e determinar se ela é criança, adolescente, adulta ou idosa. -->
 
@@ -90,6 +94,10 @@ if ($idade <= 12){
 ?>
 
 <p><?=$texto?></p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
