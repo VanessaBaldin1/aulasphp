@@ -143,7 +143,7 @@ object -> objeto */
   <!-- O código abaixo (sem comentários gera um erro) 
    relacionado a indução de tipos (foi dado uma string e era esperado um número inteiro)-->
   <!-- <p>Teste de valor/parâmetro errado: 
-    <?=verificarNegativo("Renato")?></p> -->
+    <//?=verificarNegativo("Renato")?></p> -->
 
 
 
