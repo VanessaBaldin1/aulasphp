@@ -82,14 +82,29 @@ $resultado3 = somar(1250, 788.85);
      Primeiro, a função é chamada (e aí ela calcula e retorna),
      DEPOIS o resultado que ela retornou é comparado com a condição -->
 
-<?php if (somar(10, 50) <50){ ?>
+<?php if (somar(10, 50) < 500){ ?>
     <p>João Pedro reprovado....</p>
 
 <?php
 }
 ?>
-
      <hr>
+
+     <h3>Função com parâmetros opcionais</h3>
+
+<?php
+/* Parâmetros opcionais possuem algum tipo de atribuição com um valor alternativo para o caso de não serem passados na chamada da função. Obs.: sempre devem estar por último na relação de parâmetros da função.*/ 
+
+
+
+function exibirSaudacao($mensagem, $pessoa = "" ) {
+  return "Olá, $mensagem $pessoa";
+} 
+?>
+
+    <p>Mensagem 1: <?=exibirSaudacao("bom dia", "Renato")?> </p>
+    <p>Mensagem 2: <?=exibirSaudacao("bom tarde!")?> </p>
+
   </div>
 
 
