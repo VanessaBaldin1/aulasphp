@@ -74,13 +74,20 @@ $resultado3 = somar(1250, 788.85);
 } else{ ?>
 
       <p class="alert alert-danger">Resultado 3 não é maior que 2000</p>
+<?php
+}
+?>
 
+    <!-- Usando uma função como parte de uma condição 
+     Primeiro, a função é chamada (e aí ela calcula e retorna),
+     DEPOIS o resultado que ela retornou é comparado com a condição -->
+
+<?php if (somar(10, 50) <50){ ?>
+    <p>João Pedro reprovado....</p>
 
 <?php
 }
-
 ?>
-
 
      <hr>
   </div>
