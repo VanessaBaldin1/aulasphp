@@ -37,6 +37,20 @@
         <li><?=exibirDadosDoAutor()?></li>
       </ul> 
 
+      <hr>
+
+      <h2>Função com parâmetros (ou argumentos)</h2>
+
+      <?php
+      function somar($valor1, $valor2) {
+        //Variavel de escopo LOCAL
+        $total = $valor1 + $valor2;
+
+      }
+      ?>
+
+        <p>Resultado 1: <?=somar(10, 5)?></p>
+        <p>Resultado 2: <?=somar(23, 107)?></p>
 
      <hr>
   </div>
@@ -45,7 +59,7 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
  
 
 
