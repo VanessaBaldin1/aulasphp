@@ -43,14 +43,44 @@
 
       <?php
       function somar($valor1, $valor2) {
-        //Variavel de escopo LOCAL
-        $total = $valor1 + $valor2;
+        //Variavel de escopo LOCAL:
+        /*Este tipo de variável existe SOMENTE DENTRO da função em que foi declarada*/
+        //$total = $valor1 + $valor2;
+
+        /* Retornamos o resultado, ou seja, "mandamos para fora" da função o resultado do que ela fez. */ 
+        //return $total;
+
+        // Podemos também aplicar o return direto na expressão (sem uso de variável local)
+        return $valor1 + $valor2;
 
       }
       ?>
+        <h3>Chamadas/retornos da função somar</h3>
 
         <p>Resultado 1: <?=somar(10, 5)?></p>
         <p>Resultado 2: <?=somar(23, 107)?></p>
+
+<?php
+//Chamando a função e GUARDANDO o resultado numa variável GOLBAL
+$resultado3 = somar(1250, 788.85);
+?>
+
+      <p>Resultado 3: <?=$resultado3?></p>
+
+<?php if($resultado3 > 2000){ 
+  ?>
+      <p class="alert alert-success"> O resultado 3 é maior que 2000</p>
+<?php
+} else{ ?>
+
+      <p class="alert alert-danger">Resultado 3 não é maior que 2000</p>
+
+
+<?php
+}
+
+?>
+
 
      <hr>
   </div>
