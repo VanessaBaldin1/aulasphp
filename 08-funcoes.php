@@ -115,14 +115,15 @@ e que o retorno da função DEVE ser do tipo string*/
 
 
 function verificarNegativo(int $valor):string {
-  //if ($valor < 0) {
-   // return "é negativo";
-  //} else {
-    // return "não é negativo";
-  //}
+ 
 
-  //Refatora com if/else ternário ?:
-  return $valor < 0 ? "é negativo" : "não é negativo";
+  if ($valor < 0)  return "é negativo";
+    
+
+   //Early  Return (retorno antecipado)
+     return "não é negativo";
+  
+  /* Ao usar Early Return, podemos em algumas situações evitar a necessidade do else (condicional composta). Neste exemplo, se a condição for TRUE o primeiro return é executado. Se não for, na sequência será feito o segundo return */
 
 }
 
