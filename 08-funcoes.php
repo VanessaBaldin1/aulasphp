@@ -170,6 +170,7 @@ $formatarPreco = function (float $valor): string{
 
 <?php
 //Útil para funções simples de uma única linha e com return implícito
+//Obs.: esta sintaxe só permite UMA ÚNICA operação(sem {}, sem return explícito)
 $dobrarValor = fn(int $valor):int => $valor * 2;
 ?>
     <p><?=$dobrarValor(10)?></p>
