@@ -14,15 +14,28 @@
     <hr>
 
     <h2>Função como procedimento (ou sub-rotina)</h2>
-    <p><i>Procedimentos</i> <b>não retornam</b>nada.</p>
+    <p><i>Procedimentos</i> <b>não retornam </b> nada.</p>
   <?php
   function exibirDadosDoAutor(){
-    echo "<h4>Fulano de Tal</h4>";
+    echo "<h4>Algum nome</h4>";
     echo "<p><time>".date("d/m/y")."</time></p>";
   }
   ?>
+
       <h3>Chamada do procedimento</h3>
-      <div> <?=exibirDadosDoAutor()?></div>
+      <?php
+      $valor = 1500;
+      if($valor > 1000){
+        exibirDadosDoAutor();
+      }
+      ?>
+
+      <h3>Outras chamadas</h3>
+      <div><?=exibirDadosDoAutor()?></div>
+      <ul>
+        <li><?=exibirDadosDoAutor()?></li>
+        <li><?=exibirDadosDoAutor()?></li>
+      </ul> 
 
 
      <hr>
