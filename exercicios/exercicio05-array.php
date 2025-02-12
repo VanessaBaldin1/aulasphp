@@ -14,6 +14,11 @@
   <div class="container">
 
   <?php
+
+function calcular_media($valor1, $valor2, $valor3){
+  return ($valor1 + $valor2 +$valor3)/3;
+}
+
   $alunos = [
  [ 'nome' => 'Maria',
    'nota1'=>  5,
@@ -41,14 +46,32 @@
    'nota3' => 9,
   ],
 ];
+
 ?>
+
+
+<?php
+function verificar_situacao(float $media):string{
+  if ($media >= 7) {
+   return "aprovado";
+  } else {
+    return "reprovado";
+  }
+  
+}
+
+
+?>
+
+
 
 
 
 <?php
   foreach ($alunos as $aluno){
  
-     $media =($aluno['nota1'] + $aluno['nota2'] + $aluno['nota3'])/3;
+     $media = calcular_media($aluno["nota1"], $aluno["nota2"], $aluno["nota3"])/3;
+     $situacao = verificar_Situacao($media);
   ?>
     <p> Aluno(a) <?=$aluno["nome"]?> teve as notas <?=$media?></p>
 
