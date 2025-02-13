@@ -62,7 +62,7 @@ $arrayLinguagens = explode(",",$textosLinguagens);
     <h2>Array</h2>
 
     <h3><code>implode()</code></h3>
-    <p>Transformar array em string</p>
+    <p>Transformar array indexado em string</p>
 
 <?php
 $arrayBandas = ["Queen", "The doors", "ACDC"];
@@ -71,6 +71,30 @@ $textoBandas = implode(" * ", $arrayBandas);
 
 <pre><?=var_dump($arrayBandas)?></pre>
 <pre><?=var_dump($textoBandas)?></pre>
+
+<hr>
+
+  <h3><code>extract()</code></h3>
+  <p>Extrai chaves associativas para variáveis</p>
+
+<?php
+$aluno = [
+  "id" => 1,
+  "nome" => "Algum lugar no mundo",
+  "idade" => 30
+];
+
+extract($aluno);
+
+?>
+
+
+    <ul>
+      <li>ID: <?=$id?></li>
+      <li>Nome: <?=$nome?></li>
+      <li>Idade: <?=$idade?> anos.</li>
+    </ul>
+
 
 
 
