@@ -84,7 +84,8 @@ $aluno = [
   "idade" => 30
 ];
 
-extract($aluno);
+$nome = "texte";
+extract($aluno,EXTR_PREFIX_SAME,"chave");
 
 ?>
 
@@ -168,6 +169,46 @@ $ataqueSanitizado = filter_var($ataqueDeRaqui, FILTER_SANITIZE_FULL_SPECIAL_CHAR
 
 echo $ataqueSanitizado;
 ?>
+
+<hr>
+
+  <h2>Segurança (Criptografia de dados)</h2>
+  <h3>Algoritmos e recursos</h3>
+  <ul>
+    <li>MD5</li>
+    <li>SHA-1</li>
+    <li>SHA-256</li>
+    <li> <b>password_hash() e password_verify()</b></li>
+  </ul>
+
+<?php
+//Plain Text
+$senhaTextoPuro = "123senac";
+
+//MD5
+$senhaCodificadaComMD5 = md5($senhaTextoPuro);
+$senhaCodificadaComSHA1 = sha1($senhaTextoPuro); //SHA-1
+$senhaCodificadaComSHA256 = hash('sha256', $senhaTextoPuro); //SHA-256
+
+?>
+
+  <hr>
+  <p class="alert alert-danger">Métodos/Algoritmos antigos (evite usar)</p>
+  <p>Senha (texto puro): <?=$senhaTextoPuro?></p>
+  <p>Senha (MD5): <?=$senhaCodificadaComMD5?> - (<?=strlen($senhaCodificadaComMD5)?>)
+
+</p>
+
+  <!-- Senha (SHA-1) -->
+  <p>Senha (SHA-1): <?=$senhaCodificadaComSHA1?> - (<?=strlen($senhaCodificadaComSHA1)?>) </p>
+
+  <!-- Senha (SHA-256) -->
+  <p>Senha (SHA-256): <?=$senhaCodificadaComSHA256?> - (<?=strlen($senhaCodificadaComSHA256)?>) </p>
+
+
+  
+
+
 
 
 
