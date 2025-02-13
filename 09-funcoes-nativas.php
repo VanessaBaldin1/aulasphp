@@ -123,6 +123,44 @@ $produtosUnicos = array_unique($produtos);
 <pre><?=var_dump($produtos)?></pre>
 <pre><?=var_dump($produtosUnicos)?></pre>
 
+    <hr>
+
+    <h2>Numéricas</h2>
+    <h3><code>min(), max(), round()</code></h3>
+
+<?php
+//Vamos usar o mesmo array de valores criado mais acima...
+$valorQualquer = 1259.75;
+?>
+
+    <p>Menor valor: <?=min($valores)?></p>
+    <p>Maior valor: <?=max($valores)?></p>
+    <p>Arredondamento valor: <?=round($valorQualquer)?></p>
+
+
+    <hr>
+
+    <h2>Filtros</h2>
+    <p>Recursos/Funções/Constantes de análise e limpeza de dados aplicados através das funções <code>filter_var()</code> e <code>filter_input()</code></p>
+
+    <h3>Validação</h3>
+<?php
+//Exemplo de email estruturado erroneamente
+$emailErrado = "vanessa.com.br";
+$emailCorreto = "vanessa@uol.com.br";
+?>
+
+    <p><?=var_dump( filter_var($emailErrado, FILTER_VALIDATE_EMAIL))?></p>
+    <p><?=var_dump( filter_var($emailCorreto, FILTER_VALIDATE_EMAIL))?></p>
+
+
+
+
+
+    <h3>Sanitização</h3>
+
+
+
 
 
   </div>
