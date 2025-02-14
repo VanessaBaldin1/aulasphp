@@ -14,10 +14,11 @@
   <div class="container">
   <header>
        <h1>Site com PHP</h1>
-         <nav>
+         <nav class="navbar" style="background-color: #e3f2fd;">
           <a href="index.php">Home</a>
           <a href="cursos.php">Treinamentos</a>
           <a href="duvidas.php">Dúvidas</a>
+          <a href="contato.php">Contato</a>
         </nav>
   </header>
 
