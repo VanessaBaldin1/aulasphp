@@ -1,4 +1,4 @@
-<?php include "cabecalho.php"?>
+<?php include "includes/cabecalho.php"; ?>
 
       <h2>Página de Cursos</h2>
       <p>Veja os cursos disponíveis: </p>
@@ -8,4 +8,4 @@
          <li>Como escapar de um terremoto</li>
       </ul>
  
-<?php include "footer.php"?>
+<?php include "includes/footer.php"; ?>
