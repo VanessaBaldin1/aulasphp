@@ -1,10 +1,12 @@
 </main>
 
-  <footer class="alert">
-      <p >Site criado para o curso Téc.Informática para Internet</p>
+
+  <footer class="alert text-center">
+      <p >Site criado para o curso Téc.Informática para Internet</p>  
       <?php 
       date_default_timezone_set('America/Sao_Paulo');
-      echo 'Data e hora local: ' .date('d-m-y H:i:s');?>
+      echo 'Data e hora local: ' .date('d-m-y H:i');?>
+  
   </footer>
   </div>
 
