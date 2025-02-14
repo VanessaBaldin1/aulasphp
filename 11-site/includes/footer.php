@@ -15,10 +15,6 @@ $data_extenso = $fmt->format($data);
 ?>
  
 
-
-
-
-
   <footer class="alert text-center">
       <p >Site criado para o curso Téc.Informática para Internet</p> 
       <p> <time><?=$data_extenso?></time></p> 
