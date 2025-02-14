@@ -31,6 +31,11 @@
         <Summary>Os Cursos são Gratuitos?</Summary>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique natus accusamus nobis vitae commodi.</p>
       </details>
+
+      <details>
+        <Summary>Como cadastrar meu bilhete de estudante?</Summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique natus accusamus nobis vitae commodi.</p>
+      </details>
       
   </main>
 
