@@ -14,7 +14,22 @@
   <div class="container">
         <h1>Processamento usando POST</h1> 
         <hr>
-        <pre><?=var_dump($_POST)?></pre>
+
+<?php
+// Capturando os dados transmitidos
+$nome = $_POST["nome"];
+$email = $_POST["email"];
+$idade = $_POST["idade"];
+$mensagem = $_POST["mensagem"];
+?>
+
+    <h2>Dados: </h2>
+    <ul>
+      <li>Nome:  <?=$nome?></li>
+      <li>E-mail:  <?=$email?></li>
+      <li>Idade:  <?=$idade?> anos</li>
+      <li>Mensagem:  <?=$mensagem?></li>
+    </ul>
 
 
   </div>
