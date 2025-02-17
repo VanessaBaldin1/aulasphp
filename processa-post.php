@@ -23,6 +23,7 @@ $idade = $_POST["idade"];
 $mensagem = $_POST["mensagem"];
 ?>
 
+  <!-- Exibindo dados -->
     <h2>Dados: </h2>
     <ul>
       <li>Nome:  <?=$nome?></li>
