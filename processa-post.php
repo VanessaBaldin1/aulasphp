@@ -41,6 +41,12 @@ $interesses = $_POST["interesses"] ?? [];
       <li>E-mail:  <?=$email?></li>
       <li>Idade:  <?=$idade?> anos</li>
 
+      <!-- usando ! operador NÂO dentro no if  para deixar fazio se não for selecionado nenhum campo-->
+       <!-- Usando o empty com inversão de lógica (operador ! de negação) 
+        Portanto, se NÂO ESTA vazio, mostre os interesses-->
+<?php if( !empty($interesses)) { ?>
+
+
 
       <li>Interesses - usando <code>implode()</code>:  
           <!-- Transformamos o array em string -->
@@ -54,12 +60,8 @@ $interesses = $_POST["interesses"] ?? [];
            <?php } ?>
           </ul>
 
-
-
-
-
       </li>
-
+ <?php  }?>
 
       <li>Mensagem:  <?=$mensagem?></li>
 
