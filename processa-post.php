@@ -29,7 +29,7 @@ $idade = $_POST["idade"];
 $mensagem = $_POST["mensagem"];
 
 //capturando o valor do radio
-$inf = $_POST["informativos"];
+$inf = $_POST["informativos"] ?? [];
 
 //Capturando os options
 
@@ -39,8 +39,8 @@ $inf = $_POST["informativos"];
 
 //Solução 2: usando o operador de coalescência nula ??
 /*Se houver interesses, os armazene. Caso contrário, aguarde array vazio.*/
-$interesses = $_POST["interesses"] ?? []; ?>
-
+$interesses = $_POST["interesses"] ?? []; 
+?>
 
 <!-- Exibindo dados -->
     <h2>Dados: </h2>
@@ -49,13 +49,11 @@ $interesses = $_POST["interesses"] ?? []; ?>
 
 
       <li>Idade:  <?=$idade?> anos</li>
-      <li>Informativo: <?=$inf?></li>
 
-   
+      <?php if( !empty($inf)) { ?>
+      <li>Informativos: <?=$inf?></li>
+      <?php } ?>
 
-
-
-  
 
 
       <!-- usando ! operador NÂO dentro no if  para deixar fazio se não for selecionado nenhum campo-->
