@@ -14,6 +14,9 @@
   <div class="container">
         <h1>Processamento usando POST</h1> 
         <hr>
+
+        <!-- testa o campo do formulario $_POST e não a variável
+         Para deixar campos vazios usar EMPTY -->
         <?php if(empty($_POST["nome"]) || empty($_POST["email"])) { ?>
           <p>"Por favor, preencha os campos nome e e-mail"</p> 
 
