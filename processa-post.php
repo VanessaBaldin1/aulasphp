@@ -14,8 +14,11 @@
   <div class="container">
         <h1>Processamento usando POST</h1> 
         <hr>
+        <?php if(empty($_POST["nome"]) || empty($_POST["email"])) { ?>
+          <p>"Por favor, preencha os campos nome e e-mail"</p> 
 
-<?php
+          <?php
+} else { 
 // Capturando os dados transmitidos
 $nome = $_POST["nome"];
 $email = $_POST["email"];
@@ -33,17 +36,24 @@ $inf = $_POST["informativos"];
 
 //Solução 2: usando o operador de coalescência nula ??
 /*Se houver interesses, os armazene. Caso contrário, aguarde array vazio.*/
-$interesses = $_POST["interesses"] ?? [];
-?>
+$interesses = $_POST["interesses"] ?? []; ?>
 
 
-  <!-- Exibindo dados -->
+<!-- Exibindo dados -->
     <h2>Dados: </h2>
     <ul>
-      <li>Nome:  <?=$nome?></li>
-      <li>E-mail:  <?=$email?></li>
+    
+
+
       <li>Idade:  <?=$idade?> anos</li>
       <li>Informativo: <?=$inf?></li>
+
+   
+
+
+
+  
+
 
       <!-- usando ! operador NÂO dentro no if  para deixar fazio se não for selecionado nenhum campo-->
        <!-- Usando o empty com inversão de lógica (operador ! de negação) 
@@ -69,6 +79,9 @@ $interesses = $_POST["interesses"] ?? [];
 
     </ul>
 
+    <?php
+    }
+    ?>
 
   </div>
 
