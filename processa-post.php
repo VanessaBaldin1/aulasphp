@@ -22,6 +22,9 @@ $email = $_POST["email"];
 $idade = $_POST["idade"];
 $mensagem = $_POST["mensagem"];
 
+//capturando o valor do radio
+$inf = $_POST["informativos"];
+
 //Capturando os options
 
 //Solução 1: aplicar um if/else ternário(forma mais simples) checando se existe algum interesse
@@ -40,13 +43,12 @@ $interesses = $_POST["interesses"] ?? [];
       <li>Nome:  <?=$nome?></li>
       <li>E-mail:  <?=$email?></li>
       <li>Idade:  <?=$idade?> anos</li>
+      <li>Informativo: <?=$inf?></li>
 
       <!-- usando ! operador NÂO dentro no if  para deixar fazio se não for selecionado nenhum campo-->
        <!-- Usando o empty com inversão de lógica (operador ! de negação) 
         Portanto, se NÂO ESTA vazio, mostre os interesses-->
 <?php if( !empty($interesses)) { ?>
-
-
 
       <li>Interesses - usando <code>implode()</code>:  
           <!-- Transformamos o array em string -->
@@ -61,7 +63,7 @@ $interesses = $_POST["interesses"] ?? [];
           </ul>
 
       </li>
- <?php  }?>
+ <?php  } ?>
 
       <li>Mensagem:  <?=$mensagem?></li>
 
